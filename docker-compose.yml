@@ -1,0 +1,16 @@
+version: '3'
+services:
+  dnsmasq:
+    image:  jpillora/dnsmasq
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "8080:8080"     
+    env_file:
+      - .env      
+    cap_add:
+      - NET_ADMIN
+    command: --log-facility=-
+    volumes:
+      - ./data/dnsmasq.conf:/etc/dnsmasq.conf
+      - ./data/dnsmasq.d:/etc/dnsmasq.d 
