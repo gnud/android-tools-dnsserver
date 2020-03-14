@@ -55,7 +55,11 @@ http://localhost:8080/
 # Config
 
 Either open the web interface and append this line:
-address=/dev.product.com/192.168.0.123
+address=/dev.product.com/192.168.0.123 then click the restart button
+
+Or edit the dnsmasq.conf file in data then restart with
+
+```docker-compose restart``` # too slow
 
 # Mobile client
 
