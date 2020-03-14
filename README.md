@@ -1,9 +1,11 @@
 # Purpose
 
-You don't have a router capable of editing static DNS entries, e.g:
-dev.product.com to 192.168.0.123
+You don't have a router capable of editing static DNS entries a?
+And you need to do something like E.g:
 
-This solution with DNSMasq powered by a Docker container.
+```dev.product.com to 192.168.0.123```
+
+This solution is for you, it's a DNSMasq powered by a Docker container.
 
 
 # Disable Built-in DNSMasq on ubuntu
