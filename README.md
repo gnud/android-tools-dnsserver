@@ -55,6 +55,11 @@ http://localhost:8080/
 Either open the web interface and append this line:
 address=/dev.product.com/192.168.0.123
 
+# Mobile client
+
+Edit wifi config on your Android and select Static option, then edit the dns text to match your computers IP where DNSMasq is running.
+
+Just in case re-connect the wifi connection.
 
 # Testing
 
